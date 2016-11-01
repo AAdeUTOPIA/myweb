@@ -5,12 +5,14 @@ import { Carousel } from 'antd';
 const ImgCarousel = (props) => {
   return (
     <div>
-    	 <Carousel >
-    <div><h3>1 <img src={"./1.jpg"} alt="" /></h3></div>
-    <div><h3>2</h3></div>
-    <div><h3>3</h3></div>
-    <div><h3>4</h3></div>
-  </Carousel>
+    	 <Carousel autoplay>
+          <div><img src={require('../components/1.jpg')} alt="1" /></div>
+          <div><img src={require('../components/2.jpg')} alt="2" /></div>    
+          <div><img src={require('../components/3.jpg')} alt="3" /></div>
+          <div><img src={require('../components/4.jpg')} alt="4" /></div>
+          <div><img src={require('../components/5.jpg')} alt="5" /></div>
+          <div><img src={require('../components/6.jpg')} alt="6" /></div>
+      </Carousel>
     </div>
   );
 };
