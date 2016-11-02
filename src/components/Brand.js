@@ -14,8 +14,8 @@ const Brand = (props) => {
   return (
     <div>
         <Row type="flex"  justify="space-between" align="middle">
-        	<Col span={4}>
-                <h2 className={styles.brand}>好未来旗下品牌</h2>
+        	<Col span={6} push={2}>
+                <h2 className={styles.brand}>好未来旗下品牌:</h2>
             </Col>
            	<Col span={16}>
                 <Menu className={styles.tab} selectedKeys={[]} mode="horizontal">
