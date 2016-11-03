@@ -1,26 +1,34 @@
 import React from 'react';
 import { Row, Col } from 'antd';
 import { Menu, Icon } from 'antd';
+import { Link } from 'dva/router';
+
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
 
+
+
+
 const Header = (props) => {
+
+
+
   return (
     <Row type="flex"  justify="space-between" align="middle">
     	<Col span={4} offset={2}>
     		<div>
-	      		<a href="https://www.baidu.com" target="_blank">
+	      		<Link to="/">
 	      			<img style={ {width:'100%'} } src={require('../components/imgs/logo.png')} alt="1" />
-	      		</a>
+	      		</Link>
 	      	</div>
       	</Col>
       	<Col span={12} pull={3}>
       		<div>
-      			<Menu selectedKeys={[ ]} mode="horizontal">
-	        		<SubMenu title={<span>关于我们</span>}>
+      			<Menu selectedKeys={[  ]} mode="horizontal">	        		
+	        		<SubMenu title={<Link to="/gywm"><span>关于我们</span></Link>}>
 	          			<MenuItemGroup >
-	            			<Menu.Item key="aboutus:1">企业简介</Menu.Item>
+	            			<Menu.Item key="aboutus:1"><Link to="/gywm">企业简介</Link></Menu.Item>
 	            			<Menu.Item key="aboutus:2">企业动态</Menu.Item>
 	            			<Menu.Item key="aboutus:3">创新文化</Menu.Item>
 	            			<Menu.Item key="aboutus:4">发展历程</Menu.Item>
